@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 · Oliver Fabián Stetcu</title>
+</head>
+<body>
+    <br><table border="2" style="margin: 0 auto;" width="600" height="300">
+        <tr width="50" height="25" align="center">
+            <td colspan="6">Celda 1</td>
+        </tr>
+        <tr width="50" height="25" align="center">
+            <td rowspan="2" align="left" valign="top">Celda 2</td>
+            <td colspan="2" valign="top">Celda 3</td>
+            <td>4</td>
+            <td>5</td>
+            <td rowspan="4" align="right" valign="bottom">Celda 6</td>
+        </tr>
+        <tr width="50" height="25" align="center">
+            <td>8</td>
+            <td rowspan="2" align="right" valign="top">Celda 9</td>
+            <td>10</td>
+            <td>11</td>
+        </tr>
+        <tr width="50" height="25" align="center">
+            <td>12</td>
+            <td>13</td>
+            <td rowspan="2" colspan="2" valign="bottom">Celda 15</td>
+        </tr>
+        <tr width="50" height="25" align="center">
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+    </table><br><br><br>
+
+    <h1 align="center">VALORES NUTRICIONALES</h1>
+    <table border="2" style="margin: 0 auto;" width="800" height="200">
+        <style>
+            .producto {
+                background-color: lavender;
+            }
+
+            .grasas {
+                background-color: rgb(152, 230, 152);
+            }
+
+            .tipos-grasas {
+                background-color: rgb(219, 255, 219);
+            }
+
+            .hidratos-carbono {
+                background-color: orange;
+            }
+
+            .tipos-hidratos {
+                background-color: rgb(255, 234, 196);
+            }
+
+            .otros {
+                background-color: rgb(146, 212, 235);
+            }
+
+            .tipos-otros {
+                background-color: rgb(218, 246, 255);
+            }
+
+            .energia {
+                background-color: yellow;
+            }
+
+            .tipo-energia {
+                background-color: rgb(253, 253, 211);
+            }
+
+            .total {
+                background-color: rgb(180, 180, 180);
+            }
+
+            .info {
+                background-color: rgb(43, 39, 39);
+            }
+
+            .colspan {
+                background-color: white;
+            }
+        </style>
+
+        <colgroup>              <!-- Para seleccionar una columna y cambiarle el color -->
+            <col class="info" />
+            <col class="colspan" />
+        </colgroup>
+        
+        <thead>                 <!-- Delimita el encabezado de la tabla -->
+            <tr width="50" height="25" align="center">          <!-- Define una fila de celdas -->
+                <th class="info" colspan="10" style="color: white;">Información Nutricional/Porción (100g)</th>           <!-- Define la celda de una tabla que contiene datos -->
+            </tr>
+        </thead>
+
+        <tbody>                 <!-- Delimita el cuerpo de la tabla -->
+            <tr width="50" height="25" align="center" valign="bottom">
+                <th class="producto" rowspan="2">Producto</th>
+                <th class="grasas" colspan="3">Grasas (g)</th>
+                <th class="hidratos-carbono" colspan="2">Hidratos de carbono (g)</th>
+                <th class="otros" colspan="3">Otros (g)</th>
+                <th class="energia">Energía</th>
+            </tr>
+            <tr width="50" height="25" align="center">
+                <th class="tipos-grasas">&nbsp;Saturadas&nbsp;</th>
+                <th class="tipos-grasas">&nbsp;Monoinsaturadas&nbsp;</th>
+                <th class="tipos-grasas">&nbsp;Poliinsaturadas&nbsp;</th>
+                <th class="tipos-hidratos">&nbsp;Azúcares&nbsp;</th>
+                <th class="tipos-hidratos">&nbsp;Otros&nbsp;</th>
+                <th class="tipos-otros">&nbsp;Proteínas&nbsp;</th>
+                <th class="tipos-otros">&nbsp;Sal&nbsp;</th>
+                <th class="tipos-otros">&nbsp;Otros&nbsp;</th>
+                <th class="tipo-energia">&nbsp;Kcal&nbsp;</th>
+            </tr>
+            <tr width="50" height="25" align="right" valign="bottom">
+                <th class="colspan" align="left">&nbsp;Donuts de &nbsp;chocolate &nbsp;arcoiris</th>
+                <td>20&nbsp;&nbsp;</td>
+                <td>4,38&nbsp;&nbsp;</td>
+                <td>6,82&nbsp;&nbsp;</td>
+                <td>33,07&nbsp;&nbsp;</td>
+                <td>20,93&nbsp;</td>
+                <td>4,64&nbsp;&nbsp;</td>
+                <td>0,7&nbsp;</td>
+                <td>9,46&nbsp;&nbsp;</td>
+                <td>281&nbsp;&nbsp;</td>
+            </tr>
+            <tr width="50" height="25" align="right" valign="bottom">
+                <th class="colspan" align="left">&nbsp;Palmera &nbsp;de &nbsp;azúcar</th>
+                <td>50&nbsp;&nbsp;</td>
+                <td>3,18&nbsp;&nbsp;</td>
+                <td>6,00&nbsp;&nbsp;</td>
+                <td>41,03&nbsp;&nbsp;</td>
+                <td>15,12&nbsp;</td>
+                <td>2,00&nbsp;&nbsp;</td>
+                <td>0,3&nbsp;</td>
+                <td>10,54&nbsp;</td>
+                <td>323&nbsp;&nbsp;</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr width="50" height="25" align="center" class="total">
+                <th align="left">&nbsp;Total</th>
+                <th colspan="3">31,2</th>
+                <th colspan="2">54</th>
+                <th colspan="3">4,81</th>
+                <th>604</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
